@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+<div class="container">
+    <div class="content-container">
+        {%block body%}
+        <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('{{benBackground}}');">
+        <img class="featured-title" src="{{label}}" alt="">
+        <p class="featured-desc">The series is about a 10-year-old boy named Ben Tennyson who gets a watch-like 
+            alien device called the "Omnitrix". Attached to his wrist, this allows him to transform into various alien creatures.</p>
+        <button class="featured-button"><a href="{{url_for('views.watch')}}">WATCH</a></button>
+    </div>
+    <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{ben10}}" alt="">
+                    <span class="movie-list-item-title">Ben 10</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{alienForce}}" alt="">
+                    <span class="movie-list-item-title">Ben 10 Alien Force</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{ultimateAlien}}" alt="">
+                    <span class="movie-list-item-title">Ben 10 Ultimate Alien</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{genrex}}" alt="">
+                    <span class="movie-list-item-title">Generator Rex</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{monsuno}}" alt="">
+                    <span class="movie-list-item-title">Monsuno</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{am}}" alt="">
+                    <span class="movie-list-item-title">American Dragon</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{cover}}" alt="">
+                    <span class="movie-list-item-title">Her</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{powerpuffgirls}}" alt="">
+                    <span class="movie-list-item-title">Powerpuff girls</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{dextersLab}}" alt="">
+                    <span class="movie-list-item-title">Dexter's Lab</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{cowAndChicken}}" alt="">
+                    <span class="movie-list-item-title">Cow and Chicken</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{bravo}}" alt="">
+                    <span class="movie-list-item-title">Johnny Bravo</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{courage}}" alt="">
+                    <span class="movie-list-item-title">Courage the Cowardly Dog</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{samJack}}" alt="">
+                    <span class="movie-list-item-title">Samurai Jack</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{cover}}" alt="">
+                    <span class="movie-list-item-title">Her</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+    <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('{{rexBackground}}');">
+        <img class="featured-title" src="{{rex}}" alt="">
+        <p class="featured-desc">Rex Salazar is a sixteen-year-old,amnesiac Evo with the ability to grow weapons 
+            and machines out of his body at will.</p>
+        <button class="featured-button">WATCH</button>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{grimAdventures}}" alt="">
+                    <span class="movie-list-item-title">The Grim Adventures of Billy & Mandy</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{foster}}" alt="">
+                    <span class="movie-list-item-title">Foster's Home for Imaginary Friends</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{flapJack}}" alt="">
+                    <span class="movie-list-item-title">The Marvelous Misadventures of Flapjack</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{campLazlo}}" alt="">
+                    <span class="movie-list-item-title">Camp Lazlo</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{adventureTime}}" alt="">
+                    <span class="movie-list-item-title">Adventure Time</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{stevenUniverse}}" alt="">
+                    <span class="movie-list-item-title">Steven Universe</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{eddy}}" alt="">
+                    <span class="movie-list-item-title">Ed, Edd n Eddy</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{eddy}}" alt="">
+                    <span class="movie-list-item-title">Ed, Edd n Eddy</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{teenTitans}}" alt="">
+                    <span class="movie-list-item-title">Teen Titans</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{codename}}" alt="">
+                    <span class="movie-list-item-title">Codename: Kids Next Door</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{scooby}}" alt="">
+                    <span class="movie-list-item-title">Scooby-Doo! Mystery Incorporated</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{monkey}}" alt="">
+                    <span class="movie-list-item-title">My Gym Partner's a Monkey</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{weasel}}" alt="">
+                    <span class="movie-list-item-title">I Am Weasel</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="{{uncleGrandpa}}" alt="">
+                    <span class="movie-list-item-title">Uncle Grandpa</span>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+
+        {%endblock%}
+    </div>
+</div>
+
+
+  
